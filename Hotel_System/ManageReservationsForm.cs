@@ -12,6 +12,7 @@ namespace Hotel_System
 
         Room room = new Room();
         Reservation reservation = new Reservation();
+        Client client = new Client();
 
         
         private void ManageReservationsForm_Load(object sender, EventArgs e)
@@ -20,6 +21,10 @@ namespace Hotel_System
             cbRoomType.DataSource = room.RoomTypeList();
             cbRoomType.DisplayMember = "label";
             cbRoomType.ValueMember = "id";
+
+            tbClientID.DataSource = client.ClientExistList();
+            tbClientID.DisplayMember = "id";
+            tbClientID.ValueMember = "id";
 
             //Свободные номера в зависимости от выбранного типа номеров
             int type = Convert.ToInt32(cbRoomType.SelectedValue.ToString());
@@ -44,17 +49,17 @@ namespace Hotel_System
         //Добавить
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            int clientID = Convert.ToInt32(tbClientID.Text);
-            int roomNumber = Convert.ToInt32(cbRoomNumber.SelectedValue);
-            DateTime dateIn = dateTimePickerIN.Value;
-            DateTime dateOut = dateTimePickerOUT.Value;
             try
             {
-                if (dateIn < DateTime.Now)
+                int roomNumber = Convert.ToInt32(cbRoomNumber.SelectedValue);
+                int clientID = Convert.ToInt32(tbClientID.Text);
+                DateTime dateIn = dateTimePickerIN.Value;
+                DateTime dateOut = dateTimePickerOUT.Value;
+                if (dateIn < DateTime.Today)
                 {
                     MessageBox.Show("The Date must be Greater Or Equal than Current Date", "Invalid Date In", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-                else if (dateOut < dateIn)
+                else if (dateOut < dateIn.Date)
                 {
                     MessageBox.Show("The DateOut must be Greater Or Equal than DateIn", "Invalid Date Out", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
@@ -85,19 +90,19 @@ namespace Hotel_System
         private void btnEdit_Click(object sender, EventArgs e)
         {
             int id;
-            int clientID = Convert.ToInt32(tbClientID.Text);
-            int roomNumber = Convert.ToInt32(dgvReservations.CurrentRow.Cells[1].Value.ToString());
-            DateTime dateIn = dateTimePickerIN.Value;
-            DateTime dateOut = dateTimePickerOUT.Value;
             try
             {
+                int clientID = Convert.ToInt32(tbClientID.Text);
+                int roomNumber = Convert.ToInt32(dgvReservations.CurrentRow.Cells[1].Value.ToString());
+                DateTime dateIn = dateTimePickerIN.Value;
+                DateTime dateOut = dateTimePickerOUT.Value;
                 id = Convert.ToInt32(tbReservID.Text);
 
-                if (dateIn < DateTime.Now)
+                if (dateIn < DateTime.Today)
                 {
                     MessageBox.Show("The Date must be Greater Or Equal than Current Date", "Invalid Date In", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-                else if (dateOut < dateIn)
+                else if (dateOut < dateIn.Date)
                 {
                     MessageBox.Show("The DateOut must be Greater Or Equal than DateIn", "Invalid Date Out", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }

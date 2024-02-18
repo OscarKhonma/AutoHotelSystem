@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.1.2
 -- https://www.phpmyadmin.net/
 --
--- Хост: 127.0.0.1:3306
--- Время создания: Сен 21 2023 г., 06:23
--- Версия сервера: 10.4.26-MariaDB
--- Версия PHP: 8.0.22
+-- Host: localhost:3306
+-- Generation Time: Feb 17, 2024 at 10:35 PM
+-- Server version: 5.7.24
+-- PHP Version: 8.0.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данных: `auto_hotel_system`
+-- Database: `auto_hotel_system`
 --
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `clients`
+-- Table structure for table `clients`
 --
 
 CREATE TABLE `clients` (
@@ -36,7 +36,7 @@ CREATE TABLE `clients` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Дамп данных таблицы `clients`
+-- Dumping data for table `clients`
 --
 
 INSERT INTO `clients` (`id`, `first_name`, `last_name`, `phone`, `country`) VALUES
@@ -48,7 +48,7 @@ INSERT INTO `clients` (`id`, `first_name`, `last_name`, `phone`, `country`) VALU
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `reservations`
+-- Table structure for table `reservations`
 --
 
 CREATE TABLE `reservations` (
@@ -60,7 +60,7 @@ CREATE TABLE `reservations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Дамп данных таблицы `reservations`
+-- Dumping data for table `reservations`
 --
 
 INSERT INTO `reservations` (`id`, `room_number`, `client_id`, `date_in`, `date_out`) VALUES
@@ -72,7 +72,7 @@ INSERT INTO `reservations` (`id`, `room_number`, `client_id`, `date_in`, `date_o
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `rooms`
+-- Table structure for table `rooms`
 --
 
 CREATE TABLE `rooms` (
@@ -83,7 +83,7 @@ CREATE TABLE `rooms` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Дамп данных таблицы `rooms`
+-- Dumping data for table `rooms`
 --
 
 INSERT INTO `rooms` (`number`, `type`, `phone`, `free`) VALUES
@@ -97,7 +97,7 @@ INSERT INTO `rooms` (`number`, `type`, `phone`, `free`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `rooms_type`
+-- Table structure for table `rooms_type`
 --
 
 CREATE TABLE `rooms_type` (
@@ -107,7 +107,7 @@ CREATE TABLE `rooms_type` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Дамп данных таблицы `rooms_type`
+-- Dumping data for table `rooms_type`
 --
 
 INSERT INTO `rooms_type` (`id`, `label`, `price`) VALUES
@@ -119,7 +119,7 @@ INSERT INTO `rooms_type` (`id`, `label`, `price`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `users`
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -129,24 +129,24 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Дамп данных таблицы `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `username`, `password`) VALUES
 (1, 'admin', 'admin');
 
 --
--- Индексы сохранённых таблиц
+-- Indexes for dumped tables
 --
 
 --
--- Индексы таблицы `clients`
+-- Indexes for table `clients`
 --
 ALTER TABLE `clients`
   ADD PRIMARY KEY (`id`);
 
 --
--- Индексы таблицы `reservations`
+-- Indexes for table `reservations`
 --
 ALTER TABLE `reservations`
   ADD PRIMARY KEY (`id`),
@@ -154,66 +154,66 @@ ALTER TABLE `reservations`
   ADD KEY `fk_client_id` (`client_id`);
 
 --
--- Индексы таблицы `rooms`
+-- Indexes for table `rooms`
 --
 ALTER TABLE `rooms`
   ADD PRIMARY KEY (`number`),
   ADD KEY `fk_type_id` (`type`);
 
 --
--- Индексы таблицы `rooms_type`
+-- Indexes for table `rooms_type`
 --
 ALTER TABLE `rooms_type`
   ADD PRIMARY KEY (`id`);
 
 --
--- Индексы таблицы `users`
+-- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `username` (`username`);
 
 --
--- AUTO_INCREMENT для сохранённых таблиц
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT для таблицы `clients`
+-- AUTO_INCREMENT for table `clients`
 --
 ALTER TABLE `clients`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT для таблицы `reservations`
+-- AUTO_INCREMENT for table `reservations`
 --
 ALTER TABLE `reservations`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT для таблицы `rooms_type`
+-- AUTO_INCREMENT for table `rooms_type`
 --
 ALTER TABLE `rooms_type`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT для таблицы `users`
+-- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- Ограничения внешнего ключа сохраненных таблиц
+-- Constraints for dumped tables
 --
 
 --
--- Ограничения внешнего ключа таблицы `reservations`
+-- Constraints for table `reservations`
 --
 ALTER TABLE `reservations`
   ADD CONSTRAINT `fk_client_id` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `fk_room_number` FOREIGN KEY (`room_number`) REFERENCES `rooms` (`number`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Ограничения внешнего ключа таблицы `rooms`
+-- Constraints for table `rooms`
 --
 ALTER TABLE `rooms`
   ADD CONSTRAINT `fk_type_id` FOREIGN KEY (`type`) REFERENCES `rooms_type` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;

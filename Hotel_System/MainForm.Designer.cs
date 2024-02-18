@@ -153,9 +153,6 @@ namespace Hotel_System
         }
 
         #endregion
-        private System.Windows.Forms.ToolStripMenuItem manageClientsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem manageRoomsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem manageReservationsToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button BtnMC;
         private System.Windows.Forms.Button BtnMRes;

@@ -8,7 +8,7 @@ namespace Hotel_System
      */
     class DBConnection
     {
-        private MySqlConnection _connection = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;database=auto_hotel_system");
+        private MySqlConnection _connection = new MySqlConnection("datasource=localhost;port=3306;username=root;password=root;database=auto_hotel_system");
 
         //вернуть connection
         public MySqlConnection GetConnection()

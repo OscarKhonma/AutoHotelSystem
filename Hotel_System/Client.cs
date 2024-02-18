@@ -10,8 +10,20 @@ namespace Hotel_System
      * 
      * */
     class Client
-    {
+    {   
         DBConnection conn = new DBConnection();
+
+        public DataTable ClientExistList()
+        {
+            MySqlCommand command = new MySqlCommand("SELECT * FROM clients", conn.GetConnection());
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            DataTable table = new DataTable();
+
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+
+            return table;
+        }
 
         //insert нового client
         public bool InsertClient(String fname, String lname, String phone, String country)

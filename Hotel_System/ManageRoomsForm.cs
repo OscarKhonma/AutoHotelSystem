@@ -30,10 +30,10 @@ namespace Hotel_System
             int type = Convert.ToInt32(cbRoomType.SelectedValue.ToString());
             String phone = tbPhone.Text;
             String free = "";
-            int number = Convert.ToInt32(tbNumber.Text);
 
             try
             {
+                int number = Convert.ToInt32(tbNumber.Text);
                 if (rbYes.Checked)
                 {
                     free = "YES";
@@ -42,7 +42,7 @@ namespace Hotel_System
                 {
                     free = "NO";
                 }
-
+                
                 if (room.InsertRoom(number, type, phone, free))
                 {
                     dgvRooms.DataSource = room.GetAllRooms();
@@ -69,10 +69,10 @@ namespace Hotel_System
             int type = Convert.ToInt32(cbRoomType.SelectedValue.ToString());
             String phone = tbPhone.Text;
             String free = "";
-            int number = Convert.ToInt32(tbNumber.Text);
 
             try
             {
+                int number = Convert.ToInt32(tbNumber.Text);
 
                 if (rbYes.Checked)
                 {

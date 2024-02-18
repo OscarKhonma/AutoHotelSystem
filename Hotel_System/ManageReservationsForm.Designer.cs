@@ -47,9 +47,9 @@ namespace Hotel_System
             this.cbRoomNumber = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cbRoomType = new System.Windows.Forms.ComboBox();
-            this.tbClientID = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.tbClientID = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReservations)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -59,10 +59,9 @@ namespace Hotel_System
             // 
             this.btnClearFields.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClearFields.ForeColor = System.Drawing.Color.Purple;
-            this.btnClearFields.Location = new System.Drawing.Point(26, 500);
-            this.btnClearFields.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClearFields.Location = new System.Drawing.Point(20, 406);
             this.btnClearFields.Name = "btnClearFields";
-            this.btnClearFields.Size = new System.Drawing.Size(147, 50);
+            this.btnClearFields.Size = new System.Drawing.Size(110, 41);
             this.btnClearFields.TabIndex = 15;
             this.btnClearFields.Text = "Очистить";
             this.btnClearFields.UseVisualStyleBackColor = true;
@@ -72,10 +71,9 @@ namespace Hotel_System
             // 
             this.btnRemove.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemove.ForeColor = System.Drawing.Color.Purple;
-            this.btnRemove.Location = new System.Drawing.Point(336, 500);
-            this.btnRemove.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRemove.Location = new System.Drawing.Point(252, 406);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(147, 50);
+            this.btnRemove.Size = new System.Drawing.Size(110, 41);
             this.btnRemove.TabIndex = 14;
             this.btnRemove.Text = "Удалить";
             this.btnRemove.UseVisualStyleBackColor = true;
@@ -85,10 +83,9 @@ namespace Hotel_System
             // 
             this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.Color.Purple;
-            this.btnEdit.Location = new System.Drawing.Point(181, 500);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEdit.Location = new System.Drawing.Point(136, 406);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(147, 50);
+            this.btnEdit.Size = new System.Drawing.Size(110, 41);
             this.btnEdit.TabIndex = 13;
             this.btnEdit.Text = "Изменить";
             this.btnEdit.UseVisualStyleBackColor = true;
@@ -98,10 +95,9 @@ namespace Hotel_System
             // 
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.Purple;
-            this.btnAdd.Location = new System.Drawing.Point(102, 558);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdd.Location = new System.Drawing.Point(76, 453);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(284, 50);
+            this.btnAdd.Size = new System.Drawing.Size(213, 41);
             this.btnAdd.TabIndex = 12;
             this.btnAdd.Text = "Создать бронь";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -114,12 +110,11 @@ namespace Hotel_System
             this.dgvReservations.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvReservations.BackgroundColor = System.Drawing.Color.MediumSeaGreen;
             this.dgvReservations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvReservations.Location = new System.Drawing.Point(508, 122);
-            this.dgvReservations.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvReservations.Location = new System.Drawing.Point(381, 99);
             this.dgvReservations.Name = "dgvReservations";
             this.dgvReservations.ReadOnly = true;
             this.dgvReservations.RowHeadersWidth = 51;
-            this.dgvReservations.Size = new System.Drawing.Size(705, 496);
+            this.dgvReservations.Size = new System.Drawing.Size(529, 403);
             this.dgvReservations.TabIndex = 11;
             this.dgvReservations.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvReservations_CellClick);
             // 
@@ -128,9 +123,8 @@ namespace Hotel_System
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(68)))), ((int)(((byte)(173)))));
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1229, 80);
+            this.panel2.Size = new System.Drawing.Size(922, 65);
             this.panel2.TabIndex = 0;
             // 
             // label1
@@ -140,9 +134,8 @@ namespace Hotel_System
             this.label1.Font = new System.Drawing.Font("Arial", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Pink;
             this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1229, 80);
+            this.label1.Size = new System.Drawing.Size(922, 65);
             this.label1.TabIndex = 0;
             this.label1.Text = "Управление списком брони";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -150,6 +143,7 @@ namespace Hotel_System
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.panel1.Controls.Add(this.tbClientID);
             this.panel1.Controls.Add(this.tbReservID);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.dateTimePickerOUT);
@@ -159,7 +153,6 @@ namespace Hotel_System
             this.panel1.Controls.Add(this.cbRoomNumber);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.cbRoomType);
-            this.panel1.Controls.Add(this.tbClientID);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.btnClearFields);
             this.panel1.Controls.Add(this.btnRemove);
@@ -170,9 +163,8 @@ namespace Hotel_System
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1229, 633);
+            this.panel1.Size = new System.Drawing.Size(922, 514);
             this.panel1.TabIndex = 2;
             // 
             // tbReservID
@@ -180,10 +172,9 @@ namespace Hotel_System
             this.tbReservID.BackColor = System.Drawing.Color.PowderBlue;
             this.tbReservID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbReservID.ForeColor = System.Drawing.Color.Indigo;
-            this.tbReservID.Location = new System.Drawing.Point(181, 122);
-            this.tbReservID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbReservID.Location = new System.Drawing.Point(136, 99);
             this.tbReservID.Name = "tbReservID";
-            this.tbReservID.Size = new System.Drawing.Size(268, 34);
+            this.tbReservID.Size = new System.Drawing.Size(202, 29);
             this.tbReservID.TabIndex = 28;
             // 
             // label2
@@ -191,10 +182,9 @@ namespace Hotel_System
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Violet;
-            this.label2.Location = new System.Drawing.Point(43, 122);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(32, 99);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 29);
+            this.label2.Size = new System.Drawing.Size(96, 24);
             this.label2.TabIndex = 27;
             this.label2.Text = "Reserv ID:";
             // 
@@ -205,10 +195,9 @@ namespace Hotel_System
             this.dateTimePickerOUT.CustomFormat = "dd/MM/yyyy";
             this.dateTimePickerOUT.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePickerOUT.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerOUT.Location = new System.Drawing.Point(181, 407);
-            this.dateTimePickerOUT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePickerOUT.Location = new System.Drawing.Point(136, 331);
             this.dateTimePickerOUT.Name = "dateTimePickerOUT";
-            this.dateTimePickerOUT.Size = new System.Drawing.Size(265, 34);
+            this.dateTimePickerOUT.Size = new System.Drawing.Size(200, 29);
             this.dateTimePickerOUT.TabIndex = 26;
             // 
             // label7
@@ -216,10 +205,9 @@ namespace Hotel_System
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Violet;
-            this.label7.Location = new System.Drawing.Point(54, 412);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(40, 335);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(113, 29);
+            this.label7.Size = new System.Drawing.Size(88, 24);
             this.label7.TabIndex = 24;
             this.label7.Text = "Date Out:";
             // 
@@ -230,10 +218,9 @@ namespace Hotel_System
             this.dateTimePickerIN.CustomFormat = "dd/MM/yyyy";
             this.dateTimePickerIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePickerIN.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePickerIN.Location = new System.Drawing.Point(181, 357);
-            this.dateTimePickerIN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePickerIN.Location = new System.Drawing.Point(136, 290);
             this.dateTimePickerIN.Name = "dateTimePickerIN";
-            this.dateTimePickerIN.Size = new System.Drawing.Size(265, 34);
+            this.dateTimePickerIN.Size = new System.Drawing.Size(200, 29);
             this.dateTimePickerIN.TabIndex = 23;
             // 
             // label6
@@ -241,10 +228,9 @@ namespace Hotel_System
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Violet;
-            this.label6.Location = new System.Drawing.Point(73, 357);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(55, 290);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(94, 29);
+            this.label6.Size = new System.Drawing.Size(73, 24);
             this.label6.TabIndex = 22;
             this.label6.Text = "Date In:";
             // 
@@ -255,10 +241,9 @@ namespace Hotel_System
             this.cbRoomNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbRoomNumber.ForeColor = System.Drawing.Color.Indigo;
             this.cbRoomNumber.FormattingEnabled = true;
-            this.cbRoomNumber.Location = new System.Drawing.Point(181, 297);
-            this.cbRoomNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbRoomNumber.Location = new System.Drawing.Point(136, 241);
             this.cbRoomNumber.Name = "cbRoomNumber";
-            this.cbRoomNumber.Size = new System.Drawing.Size(268, 37);
+            this.cbRoomNumber.Size = new System.Drawing.Size(202, 32);
             this.cbRoomNumber.TabIndex = 21;
             // 
             // label5
@@ -266,10 +251,9 @@ namespace Hotel_System
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Violet;
-            this.label5.Location = new System.Drawing.Point(44, 297);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(33, 241);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(122, 29);
+            this.label5.Size = new System.Drawing.Size(96, 24);
             this.label5.TabIndex = 20;
             this.label5.Text = "Room No:";
             // 
@@ -280,33 +264,20 @@ namespace Hotel_System
             this.cbRoomType.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbRoomType.ForeColor = System.Drawing.Color.Indigo;
             this.cbRoomType.FormattingEnabled = true;
-            this.cbRoomType.Location = new System.Drawing.Point(181, 239);
-            this.cbRoomType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbRoomType.Location = new System.Drawing.Point(136, 194);
             this.cbRoomType.Name = "cbRoomType";
-            this.cbRoomType.Size = new System.Drawing.Size(268, 37);
+            this.cbRoomType.Size = new System.Drawing.Size(202, 32);
             this.cbRoomType.TabIndex = 19;
             this.cbRoomType.SelectedIndexChanged += new System.EventHandler(this.cbRoomType_SelectedIndexChanged);
-            // 
-            // tbClientID
-            // 
-            this.tbClientID.BackColor = System.Drawing.Color.PowderBlue;
-            this.tbClientID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbClientID.ForeColor = System.Drawing.Color.Indigo;
-            this.tbClientID.Location = new System.Drawing.Point(181, 182);
-            this.tbClientID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tbClientID.Name = "tbClientID";
-            this.tbClientID.Size = new System.Drawing.Size(268, 34);
-            this.tbClientID.TabIndex = 18;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Violet;
-            this.label4.Location = new System.Drawing.Point(56, 182);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(42, 148);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(110, 29);
+            this.label4.Size = new System.Drawing.Size(84, 24);
             this.label4.TabIndex = 17;
             this.label4.Text = "Client ID:";
             // 
@@ -315,22 +286,32 @@ namespace Hotel_System
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Violet;
-            this.label3.Location = new System.Drawing.Point(20, 239);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(15, 194);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(145, 29);
+            this.label3.Size = new System.Drawing.Size(114, 24);
             this.label3.TabIndex = 3;
             this.label3.Text = "Room Type:";
             // 
+            // tbClientID
+            // 
+            this.tbClientID.BackColor = System.Drawing.Color.PowderBlue;
+            this.tbClientID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.tbClientID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbClientID.ForeColor = System.Drawing.Color.Indigo;
+            this.tbClientID.FormattingEnabled = true;
+            this.tbClientID.Location = new System.Drawing.Point(136, 148);
+            this.tbClientID.Name = "tbClientID";
+            this.tbClientID.Size = new System.Drawing.Size(202, 32);
+            this.tbClientID.TabIndex = 29;
+            // 
             // ManageReservationsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.ClientSize = new System.Drawing.Size(1229, 633);
+            this.ClientSize = new System.Drawing.Size(922, 514);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ManageReservationsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ManageReservationsForm";
@@ -354,7 +335,6 @@ namespace Hotel_System
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox tbClientID;
         private System.Windows.Forms.ComboBox cbRoomType;
         private System.Windows.Forms.ComboBox cbRoomNumber;
         private System.Windows.Forms.Label label5;
@@ -364,5 +344,6 @@ namespace Hotel_System
         private System.Windows.Forms.DateTimePicker dateTimePickerOUT;
         private System.Windows.Forms.TextBox tbReservID;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox tbClientID;
     }
 }
